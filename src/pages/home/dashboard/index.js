@@ -16,7 +16,7 @@ export default function Dashboard() {
         <div className="home_content_body">
         <form>
         <input type="text" placeholder="Registration Number"/>
-        <input type="submit" value="Search"/>
+        <input  type="submit" value="Search"/>
         </form>
         <button className="markButton">Mark Attendence</button>
        

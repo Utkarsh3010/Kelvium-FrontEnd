@@ -26,7 +26,8 @@ body {
   gap: 15px;
   position: relative;
   top :25%;
-  transform:translateX(-10px);
+  transform : translateX(-50px);
+  transform : translateY(20px);
   margin-left: 35%;
   margin-top: 2%;
 }
@@ -79,3 +80,47 @@ input[type="submit"]{
 h1 {
   font-family: 'Black Ops One', cursive;
 }
+
+@media (max-width:1400px){
+ .home_content_body{
+  width: 70%;
+ }
+ .home_content_body input{
+  transform:translateX(-80px);
+}
+.markButton{
+  transform : translateX(-50px);
+
+}
+}
+@media (max-width:1300px){
+  .home_content_body input{
+    transform:translateX(-80px);
+  }
+  .markButton{
+    transform : translateX(-50px);
+ 
+  }
+  
+ }
+ @media (max-width:800px){
+ 
+  .home_content_body input{
+    transform:translateX(-80px);
+    max-width: 50%;
+  }
+  .markButton{
+    transform : translateX(-50px);
+ 
+  }
+  
+ }
+ @media (max-width:685px){
+ .img{
+  transform:translateY(-30px);
+ }
+  .home_content_header h1{
+    font-size:xx-large;
+  }
+  
+ }

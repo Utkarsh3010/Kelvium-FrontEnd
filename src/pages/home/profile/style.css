@@ -1,3 +1,7 @@
+h1{
+    font-size: x-large;
+}
+
 .card{
     position: relative;
 
@@ -153,3 +157,16 @@
     font-weight: 700;
     letter-spacing: 1px;
 }
+
+@media (max-width:1400px){
+    .home_content_body{
+     width: 70%;
+    }
+    .home_content_body input{
+     transform:translateX(-80px);
+   }
+   .markButton{
+     transform : translateX(-50px);
+   
+   }
+   }
