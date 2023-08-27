@@ -1,0 +1,155 @@
+.card{
+    position: relative;
+
+    width: 350px;
+    margin-left: 15%;
+    margin-top: 55px;
+    height: 230px;
+    /* height: 450px; */
+    background: rosybrown;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0,0.15);
+    transition: 0.5s;
+    
+}
+
+.card h2 {
+    transform:translateY(-20px)
+}
+.card:hover{
+    height: 450px;
+}
+.imgBx{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0,0.15);
+    width: 150px;
+    height: 150px;
+    background: #000;
+    overflow: hidden;
+}
+
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card .content .details{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+.card:hover .content .details{
+    transform: translateY(0px);
+}
+.card .content .details .h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+}
+.card .content .details h2 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.card .content .details .data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.card .content .details .data h3{
+    font-size: 1em;
+    color: #000;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+
+.card .content .details .data h3 span{
+    font-size: 0.85em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+.box{
+    margin-left: 45%;
+    position: absolute;
+    top: 20%;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 30px 60px rgba(0, 0, 0,0.2);
+}
+.box .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.box .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.box .percent svg circle{
+    width: 150px;
+    height: 150px;
+    fill:none;
+    stroke: #000;
+    stroke-width: 10;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+.box .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+.box .percent svg circle:nth-child(2){
+    stroke-dashoffset: 50;
+    stroke: #03a9f4;
+}
+.box .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+}
+.box .percent .number h2{
+    font-size: 48px;
+}
+.box .percent .number h2 span{
+    font-size: 24px;
+}
+.box .text{
+    padding: 10px 0 0;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
